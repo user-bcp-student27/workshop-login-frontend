@@ -16,6 +16,7 @@
     <span class="skeleton"></span>
   </div>
   <p class="error" *ngIf="error">{{ error }}</p>
+  <p class="error" role="status" *ngIf="cleanupWarning">{{ cleanupWarning }}</p>
 
   <section class="grid" *ngIf="!loading && !error">
     <article class="task" *ngFor="let task of visibleTasks">
